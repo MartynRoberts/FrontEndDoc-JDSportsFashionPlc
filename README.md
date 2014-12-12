@@ -2,7 +2,7 @@ JD Sports Fashion plc
 ==================
 
 
-# Front-End Style Guide
+# Front-End Style Guide (not official yet)
 
 Welcome to the JD Sports Fashion plc
 

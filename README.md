@@ -1,50 +1,42 @@
 JD Sports Fashion plc
 ==================
 
+# Front-End Coding Guide (not official yet)
 
-# Front-End Style Guide (not official yet)
-
-Welcome to the JD Sports Fashion plc
-
-Front End development style guide.
 It is important to note and consider that every organisation
 big or small, has a coding spec - or at least it should do.
 
-JD is no different. We have over 35 companies
-in over 200 countries and have platforms for all brands on
-mobile, desktop and tablet. This also includes store kiosk
-and other channels including social and third party vendor
-sites such as Amazon. This is in multi languages and multi 
-currencies and we have multi development teams; therefore
-it is imperative that we stick and try to have a consistant
+JD is no different. We have over 35 companies in over 200 countries and have platforms for all brands on mobile, desktop and tablet. This also includes store kiosks and other channels including social and third party vendor sites such as Amazon. All sites in various platforms such as IBM WebSphere Commerce, custom feed driver platforms, Oracle and much more.. chuck in the fact that we are multi language, multi currency, multi device, multi platform, multi facia and we have multi development teams (globally); therefore it is imperative that we stick and try to have a consistant
 codebase across our group.
 
-Welcome again to JD.
+It is not acceptable for poor code to come to the public face of our facias. 
 
+Welcome to JD.
 
 ---------------------------------------------------------------------------------------------------
 
 ### <a name='contents'>Contents</a>
 
 #### [General](#general)
-  1. [Indenting](#general-indenting)
-  1. [Capitalisation](#general-capitalisation)
-  1. [Spacing](#general-spacing)
-  1. [Encoding](#general-encoding)
-  1. [Minification](#minification)
+1. [Comments](#code-comments)
+1. [Indenting](#general-indenting)
+1. [Capitalisation](#general-capitalisation)
+1. [Spacing](#general-spacing)
+1. [Encoding](#general-encoding)
+1. [Minification](#minification)
 
 #### [HTML](#html)
-  1. [General](#html-general)
-  1. [Semantics](#html-semantics)
-  1. [Style](#html-style)
-  1. [Formatting](#html-formatting)
+1. [General](#html-general)
+1. [Semantics](#html-semantics)
+1. [Style](#html-style)
+1. [Formatting](#html-formatting)
 
 #### [CSS](#css)
-  1. [Style](#css-style)
-  1. [Formatting](#css-formatting)
+1. [Style](#css-style)
+1. [Formatting](#css-formatting)
 
 #### [JavaScript](#javascript)
-  1. [Writing](#javascript-writing)
+1. [Writing](#javascript-writing)
 
 
 #### [Info](#info)
@@ -52,6 +44,37 @@ Welcome again to JD.
 ---------------------------------------------------------------------------------------------------
 
 ## <a name="general">General</a>
+
+
+### <a name="code-comments">Indenting</a>
+
+ - Every line of code, every snippet, every service layer requires the global JD comment wrapper. You can do this block for html with `<!--` and for any other language as needed. The block contains your name, the date, and also the hashtag of the campaign. So for example all code, libraries and other files you work contains will have this block.
+ 
+	```
+	/***
+	
+	* --- --- --- --- ---
+	* JD Sports Fashion plc
+	* IBM WebSphere Commerce Platform
+	* Khaleel Mughal - 12.12.2014
+	* --- --- --- --- ---
+	* #JDHOMEPAGE
+	* --- --- --- --- ---
+	***/
+	```
+ - Generally speaking all code commenting should be used via // and then good annotation of the block in question
+ 
+     ```bad js comments
+    // fix for fmd
+	 var f=3;
+	 ```
+
+     ```bad js comments
+    // VARS
+	 // -- Fixes .fmd classes in bootstrap
+	 var strFMDInjectionFix = 3;
+	 ```
+
 
 ### <a name="general-indenting">Indenting</a>
 

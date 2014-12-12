@@ -1,0 +1,33 @@
+/***
+
+ * --- --- --- --- ---
+ * JD Sports Fashion plc
+ * IBM WebSphere Commerce Platform
+ * Khaleel Mughal, Updated by Timi Abel
+ * --- --- --- --- ---
+ * #NIKECROSSTOWN
+ * --- --- --- --- ---
+
+***/
+
+/*
+GLOBALS
+*/
+.left{float:left}
+.right{float:right}
+.hide{display:none}
+.clear{clear:both}
+.caps{text-transform:uppercase}
+.center{text-align:center}
+
+/*
+RESPONSIVE
+*/
+@media screen and (max-width:1475px){
+}
+@media screen and (max-width:1200px){
+}
+@media screen and (max-width:1024px){
+}
+@media screen and (max-width:800px){
+}

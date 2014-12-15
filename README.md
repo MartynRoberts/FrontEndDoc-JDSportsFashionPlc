@@ -3,15 +3,9 @@ JD Sports Fashion plc
 
 # Front-End Coding Guide (not official yet)
 
-It is important to note and consider that every organisation
-big or small, has a coding spec - or at least it should do.
+JD Sports Fashion plc is one of the worlds leading sports fashion retail conglomerates. We have over 35 companies in over 200 countries and have platforms for all brands on mobile, desktop and tablet. This also includes store kiosks and other channels including social and third party vendor sites such as Amazon, eBay and much more. We have a range of platforms from IBM WebSphere Commerce to Magento to Aurora to MESH to Oracle ATG Oracle Retail to IBM DB2 and more.. custom feed driven platforms, custom in-house platforms including custom architecture.. chuck in the fact that we are multi language, multi currency, multi device, multi platform, multi facia and we have multi development teams (globally).. therefore it is imperative that we stick and try to have a consistant codebase across our group.
 
-JD is no different. We have over 35 companies in over 200 countries and have platforms for all brands on mobile, desktop and tablet. This also includes store kiosks and other channels including social and third party vendor sites such as Amazon. All sites in various platforms such as IBM WebSphere Commerce, custom feed driver platforms, Oracle and much more.. chuck in the fact that we are multi language, multi currency, multi device, multi platform, multi facia and we have multi development teams (globally); therefore it is imperative that we stick and try to have a consistant
-codebase across our group.
-
-It is not acceptable for poor code to come to the public face of our facias. 
-
-Welcome to JD.
+# Welcome to JD.
 
 ---------------------------------------------------------------------------------------------------
 
@@ -56,13 +50,12 @@ Welcome to JD.
  
 	```
 	/***
-	
 	* --- --- --- --- ---
 	* JD Sports Fashion plc
 	* IBM WebSphere Commerce Platform
-	* Khaleel Mughal - 12.12.2014
+	* Khaleel Mughal - 15.12.2014
 	* --- --- --- --- ---
-	* #JDHOMEPAGE
+	* #JDFRONTENDSPEC
 	* --- --- --- --- ---
 	***/
 	```
@@ -72,12 +65,12 @@ Welcome to JD.
     BAD JavaScript Comments
     // fix for fmd
 	 var f=3;
-	 ```
+    ```
 
     ```
     GOOD JavaScript Comments
     // VARS
-	 // -- Fixes .fmd classes in bootstrap
+    // -- Fixes .fmd classes in bootstrap
 	 var strFMDInjectionFix = 3;
 	 ```
 ### <a name="general-indenting">Indenting</a>

@@ -44,13 +44,11 @@ Welcome to JD.
 1. [Writing](#javascript-writing)
 1. [Libraries/Frameworks](#javascript-frame)
 
-
 #### [Info](#info)
 
 ---------------------------------------------------------------------------------------------------
 
 ## <a name="general">General</a>
-
 
 ### <a name="code-comments">Indenting</a>
 
@@ -82,8 +80,6 @@ Welcome to JD.
 	 // -- Fixes .fmd classes in bootstrap
 	 var strFMDInjectionFix = 3;
 	 ```
-
-
 ### <a name="general-indenting">Indenting</a>
 
   - Use two spaces to indent. Two spaces is enough space to illustrate heirarchy, but not so much that deeply nested HTML gets out of hand.
@@ -187,7 +183,7 @@ Welcome to JD.
     <!-- bad -->
     <p>OMG I ♥ ♥ ♥ CATS</p>
     ```
-
+	 
 #### Type attributes
 
   - Omit `type` attributes for style sheets and scripts.
@@ -284,6 +280,7 @@ Welcome to JD.
     .class{padding:20px;5px}
 	 .logo{padding:5px;font:Arial bold}
     ```
+  
   - HTML and JS should follow the same rule - do not code your fixes on live .min or live .compressed files - do you work and fixes in staging and then compress and re-ship your code.
   
   ```
@@ -300,21 +297,10 @@ Welcome to JD.
 	 function foot(f){console.log(f);}
     ```
 
-
-
-
-
-
-
-
-
-
 **[[⬆]](#contents)**
 
 ---------------------------------------------------------------------------------------------------
  
-
-
 ## <a name="arc">Architecture</a>
 
 ### <a name="arc-namc">Name Conventions</a>
@@ -378,21 +364,10 @@ Welcome to JD.
  
  - Always have a .compress, .src or .dist file alternative of your minified file - minified files should be served first. Use GruntJS or any other tool which does good compression without breaking and destroying your JS or CSS.
 
-
-
-
 **[[⬆]](#contents)**
 
 ---------------------------------------------------------------------------------------------------
  
- 
- 
- 
- 
- 
- 
-  
-
 ## <a name="css">CSS</a>
 
 ### <a name="css-general">General</a>

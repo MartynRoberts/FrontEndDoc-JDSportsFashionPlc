@@ -25,6 +25,11 @@ Welcome to JD.
 1. [Encoding](#general-encoding)
 1. [Minification](#minification)
 
+#### [Architecture](#arc)
+1. [Name Conventions](#arc-namc)
+1. [Folder Structures](#arc-fold)
+1. [Live/Staging File Names](#arc-file)
+
 #### [HTML](#html)
 1. [General](#html-general)
 1. [Semantics](#html-semantics)
@@ -39,10 +44,6 @@ Welcome to JD.
 1. [Writing](#javascript-writing)
 1. [Libraries/Frameworks](#javascript-frame)
 
-#### [Architecture](#arc)
-1. [Name Conventions](#arc-namc)
-1. [Folder Structures](#arc-fold)
-1. [Live/Staging File Names](#arc-file)
 
 #### [Info](#info)
 

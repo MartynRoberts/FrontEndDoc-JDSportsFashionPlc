@@ -37,7 +37,12 @@ Welcome to JD.
 
 #### [JavaScript](#javascript)
 1. [Writing](#javascript-writing)
+1. [Libraries/Frameworks](#javascript-frame)
 
+#### [Architecture](#arc)
+1. [Name Conventions](#arc-namc)
+1. [Folder Structures](#arc-fold)
+1. [Live/Staging File Names](#arc-file)
 
 #### [Info](#info)
 
@@ -683,6 +688,89 @@ Welcome to JD.
  - Use good cloaking when using Angular
  
  - ALWAYS serve JS through defer and at the footer of the HTML document
+ 
+ 
+### <a name="javascript-writing">Frameworks and Libraries</a>
+
+- Use the global JD CDN for using the same libraries.
+
+- Try to use Amazon CDN or the Akamai buckets for CDN calls; if the library or plugin is out of date, clone the repo and save as .src.backup and apply the same dist and source release updates for making it public - remember to comment and documentate and hashtag the file so it can be updated later
+
+- Turn off and remove libraries after you upgrade and delete the folders after about a month to ensure to old callbacks - Use JSLint and jsFiddle for testing.
+
+**[[⬆]](#contents)**
+
+---------------------------------------------------------------------------------------------------
+
+1. [Name Conventions](#arc-namc)
+1. [Folder Structures](#arc-fold)
+1. [Live/Staging File Names](#arc-file)
+
+
+## <a name="arc">Architecture</a>
+
+### <a name="arc-namc">Name Conventions</a>
+
+- Use camel casing; THISISNOTPOOR compared to camelCasing.
+- Use full British English.
+- Do not use slang or name initials; full names, dates and full language.
+- Do not use any profanity and keep it logical and comments most be purposeful.
+- Use generic names and do not spam text for SEO.
+- Use good names for images for better searching.
+
+### <a name="arc-fold">Folder Structures</a>
+
+	```
+	GOOD
+	/page/news
+	/page/news/sports
+	/page/news/sports/302242-David-Beckham-joins-JD-Sports
+	
+	FILE PATHS
+	/lib/www/apps/news/
+	/lib/www/apps/news/sports
+	/lib/www/apps/news/sports/302242.htm
+	
+	DB
+	/lib/www/apps/news/articleViewer.jsp?articleId=302242
+	
+	IMAGES AND MEDIA
+	
+	/assets/media/css/main.css
+	/assets/media/css/product.css
+	/assets/media/imgs/brands/adidas.jpg
+	/assets/media/imgs/jd/jd-sports-logo.jpg
+	```
+	
+### <a name="arc-file">Live/Staging File Names</a>	
+
+ - Look at this folder. The src files are code commented. And minified files are for distribution.
+ 
+ ```
+ GOOD
+ /page/nike/
+ /page/nike/index.src.html
+ /page/nike/index.html
+ 
+ GOOD
+ /page/nike/
+ /page/nike/index.dev.html
+ /page/nike/index.html
+ 
+ GOOD
+ /page/nike/
+ /page/nike/js/dev.js
+ /page/nike/js/dev.packed.js
+ 
+ GOOD
+ /page/nike/
+ /page/nike/css/framework.css
+ /page/nike/css/framework.min.css
+ ```
+ 
+ - Always have a .compress, .src or .dist file alternative of your minified file - minified files should be served first. Use GruntJS or any other tool which does good compression without breaking and destroying your JS or CSS.
+
+
 
 
 **[[⬆]](#contents)**

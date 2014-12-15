@@ -791,24 +791,17 @@ Welcome to JD.
 ---------------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
-
 ## <a name="info">Info</a>
 
 
 With help/inspiration from:
 
-- [Rob Flynn - JD](Group Head of UI, UX, Mobile, Desktop - JD Sports Fashion plc)
-- [James Holt - JD](https://github.com/yostudio)
-- [Timi Abel - JD]
-- [Richard Holding - JD]
-- [Adnan Baig - JD]
-- [Przemek Lewtak - JD]
+- Rob Flynn - JD
+- James Holt - JD
+- Timi Abel - JD
+- Richard Holding - JD
+- Adnan Baig - JD
+- Przemek Lewtak - JD
 - [Gov.UK](https://github.com/alphagov)
 - [van der Ende](http://van-der-en.de)
 - [Google HTML/CSS Style Guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)
-- [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)

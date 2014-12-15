@@ -64,12 +64,14 @@ Welcome to JD.
 	```
  - Generally speaking all code commenting should be used via // and then good annotation of the block in question
  
-     ```bad js comments
+     ```
+    BAD JavaScript Comments
     // fix for fmd
 	 var f=3;
 	 ```
 
-     ```bad js comments
+    ```
+    GOOD JavaScript Comments
     // VARS
 	 // -- Fixes .fmd classes in bootstrap
 	 var strFMDInjectionFix = 3;
@@ -261,22 +263,25 @@ Welcome to JD.
   
   - CSS minify to one CSS rule per line; also remove spaces and not needed ; etc
   
-  ```css
+  ```
     <!-- bad -->
     .class {
 		 padding: 20px 5px ;
 	 }
 	 .logo {
-		 padding:5px;
+		 padding:  5px;
+		 	font-family: arial;
+		  font-weight:bold;
 	 }
 
     <!-- good -->
     .class{padding:20px;5px}
-	 .logo{padding:5px}
+	 .logo{padding:5px;font:Arial bold}
     ```
   - HTML and JS should follow the same rule - do not code your fixes on live .min or live .compressed files - do you work and fixes in staging and then compress and re-ship your code.
   
-  ```html and js
+  ```
+  HTML/JS
     <!-- bad -->
     <h1> 
 	 test </h1>
@@ -513,7 +518,7 @@ Welcome to JD.
 
 #### Spacing
 
-  - Use a single space between property and value (but no space between property and colon).
+  - Use no single space between property and value (and no space between property and colon). There should be no trailing final ;} too. See minification above too
 
     ```css
     /* bad */
@@ -521,10 +526,10 @@ Welcome to JD.
     h1 { font-weight :bold; }
 
     /* good */
-    h1 { font-weight: bold; }
+    h1{font-weight:bold}
     ```
 
-  - Use a single space between the last selector and the opening brace that begins the declaration block.
+  - Use no single space between the last selector and the opening brace that begins the declaration block.
 
   - The opening brace should be on the same line as the last selector in a given rule.
 
@@ -540,12 +545,10 @@ Welcome to JD.
     }
 
     /* good */
-    .video {
-      margin-top: 1em;
-    }
+    .video{margin-top:1em}
     ```
 
-  - Always start a new line for each selector and declaration.
+  - You may start a new line for each selector and declaration.
 
     ```css
     /* bad */
@@ -558,20 +561,17 @@ Welcome to JD.
     input:hover {
       background: #FFFF00;
     }
+	 
+	 /* also good */
+	 input:focus,input:hover{background:#FFFF00;}
+	 
     ```
 
-  - Always put a blank line (two line breaks) between rules.
+  - No blank line (two line breaks) between rules.
 
     ```css
-    html {
-      background: #fff;
-      color: #000;
-    }
-
-    body {
-      margin: auto;
-      width: 50%;
-    }
+    html{background:#fff;color:#000}
+    body{margin:auto;width:50%}
     ```
 
   - If you are only declaring one style, write the entire declaration on one line.
@@ -579,11 +579,11 @@ Welcome to JD.
     ```css
     /* bad */
     a {
-      color: #FF0000;
+      color: #ffffff;
     }
 
     /* good */
-    a { color: #FF0000; }
+    a{color:#fff}
     ```
 
   - Use single `'` rather than double `"` quotation marks for attribute selectors or property values. Do not use quotation marks in URI values `url()`.
@@ -598,10 +598,7 @@ Welcome to JD.
 
     /* good */
     @import url(//www.google.com/css/maia.css);
-
-    html {
-      font-family: 'open sans', arial, sans-serif;
-    }
+    html{font-family: 'open sans', arial, sans-serif}
     ```
 
 **[[⬆]](#contents)**
@@ -623,7 +620,7 @@ Welcome to JD.
 
 - Use camel case in functions.
 
-    ```JavaScript
+    ```
     /* bad */
     function FOOBAR() {}
 
@@ -633,7 +630,7 @@ Welcome to JD.
 
 - Use console for testing.
 
-    ```JavaScript
+    ```
     /* bad */
     alert('test');
 
@@ -642,19 +639,46 @@ Welcome to JD.
     ```
 - Use JSON Lints for JSON validation - avoid big empty nests.
 
-    ```Json
+    ```
     /* bad */
     page { pages { pagelist { page1 {} page2{} } } } }
 
     /* good */
-    page {
-		 pagelist {
-			 page1{
-			 }
-			 page2{
-			 }
-		 }
-	 }
+	{
+	"Page": [
+	{
+	"Enabled": true,
+	"NavHTML": [
+			{
+				"id": 0,
+				"link": "/page/king-of-trainers/",
+				"pic": "/lib/hlight/king-of-trainers/assets/images/nav/kot.png",
+				"tag": "KOT-_-Navigation-_-Home",
+				"text": "King of Trainers - Home",
+				"class":"kotNavLogo"
+			},
+			{
+					"id":1,
+					"link": "/page/king-of-trainers/",
+					"pic": "/lib/hlight/king-of-trainers/assets/images/nav/latest.png",
+					"tag": "KOT-_-Navigation-_-Latest",
+					"text": "King of Trainers - Latest",
+					"class":"link",
+					"activeclass":"kotnav-latest"
+			},
+			{
+					"id":3,
+					"link": "/page/king-of-trainers_mission-statement/",
+					"pic": "/lib/hlight/king-of-trainers/assets/images/nav/mission.png",
+					"tag": "KOT-_-Navigation-_-Mission",
+					"text": "King of Trainers - Mission Statement",
+					"class":"link",
+					"activeclass":"kotnav-missionstatement"
+			}
+		]
+		}
+	]
+	}
     ```
  - Use good cloaking when using Angular
  
@@ -670,18 +694,17 @@ Welcome to JD.
 
 
 
-
-
-
-
-
-
 ## <a name="info">Info</a>
 
 
 With help/inspiration from:
 
-- [James Holt](https://github.com/yostudio)
+- [Rob Flynn - JD](Group Head of UI, UX, Mobile, Desktop - JD Sports Fashion plc)
+- [James Holt - JD](https://github.com/yostudio)
+- [Timi Abel - JD]
+- [Richard Holding - JD]
+- [Adnan Baig - JD]
+- [Przemek Lewtak - JD]
 - [Gov.UK](https://github.com/alphagov)
 - [van der Ende](http://van-der-en.de)
 - [Google HTML/CSS Style Guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml)

@@ -507,6 +507,7 @@ JD Sports Fashion plc is one of the worlds leading sports fashion retail conglom
 
   - Avoid user agent detection as well as CSS "hacks" - try a different approach first.
   - One exception to this is the "clearfix" hack to force an element to clear it's children. For support in IE8 and up this one is fairly efficient:
+
     ```css
     .group:after {
       content: "";
